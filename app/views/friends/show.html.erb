@@ -1,0 +1,8 @@
+<div class="friend_list">
+<h3 class="friends-list-header"><%= @friend.username %>'s Filofax:</h3>
+   <% @friend.friends.each do |friend| %>
+     <%= link_to friend_path(friend.id) do %>
+      <p><%= friend.username %></p>
+     <% end %>
+   <% end %>
+ </div>

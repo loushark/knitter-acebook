@@ -1,0 +1,16 @@
+var newDiv = document.createElement('div');
+newDiv.className = "post-div";
+newDiv.innerHTML = `<%= render partial: "posts/post", locals: { post: @post } %>`;
+
+document.querySelector(".posts").insertBefore(
+  newDiv,
+  document.querySelector(".posts").childNodes[0]
+)
+
+document.querySelector("#post-message").value = ""
+document.querySelector("#post-image").value = ""
+
+$('.comments-toggle').click((e) => {
+  $(`#all-comments-${e.target.id}`).toggle();
+  $(`#top-comments-${e.target.id}`).toggle();
+});

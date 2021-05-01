@@ -1,0 +1,18 @@
+// Place all the styles related to the Friends controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.friend_list {
+	background-color: white;
+	margin: 0 0 20px 0;
+	padding: 10px;
+	border: 1px solid #b5651d;
+	box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	width: 70%;
+	margin-left: 20%;
+}
+
+.friend_list a {
+	color: black;
+	text-decoration: none;
+}
